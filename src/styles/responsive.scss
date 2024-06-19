@@ -95,6 +95,15 @@
     }
   }
 
+  // Info cards component
+  body {
+    main {
+      section.info-card-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
 
   // cart page
 
@@ -310,6 +319,19 @@
 
 
 @media screen and (max-width: 550px) {
+
+  // Info cards component
+  body {
+    main {
+      section.info-card-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+      }
+    }
+  }
+
 
   // product page
 
