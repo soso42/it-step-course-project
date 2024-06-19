@@ -1,0 +1,274 @@
+// Sizes
+$header-width: 1360px;
+
+$announcement-bar-height: 40px;
+
+$header-logo: 63px;
+
+
+
+// fonts
+$primary-font: "DM Sans", sans-serif;
+
+
+
+
+
+
+
+
+// Colors
+$color-text-main: #1d1d1d;
+
+$color-base-white: white;
+$color-base-black: black;
+
+$color-accent-footer: #298556;
+
+$color-grey-50: #fafaf9;
+$color-grey-100: #f5f5f4;
+$color-grey-200: #eeeeec;
+$color-grey-300: #e7e5e4;
+$color-grey-400: #d6d3d1;
+$color-grey-500: #a8a29f;
+$color-grey-600: #78726d;
+$color-grey-700: #56524e;
+$color-grey-800: #3b3835;
+$color-grey-900: #292524;
+$color-grey-1000: #131111;
+$color-green-50: #f2fdf5;
+$color-green-100: #defce9;
+$color-green-200: #bbf7d0;
+$color-green-300: #85efac;
+$color-green-400: #4ade80;
+$color-green-500: #21c45d;
+$color-green-600: #16a249;
+$color-green-700: #157f3c;
+$color-green-800: #166434;
+$color-green-900: #14522d;
+$color-green-1000: #0c311b;
+$color-lime-50: #fcfff1;
+$color-lime-100: #f4ffc8;
+$color-lime-200: #ebff9e;
+$color-lime-300: #e3ff75;
+$color-lime-400: #c8e261;
+$color-lime-500: #acc74c;
+$color-lime-600: #92a83d;
+$color-lime-700: #7c9227;
+$color-lime-800: #62741a;
+$color-lime-900: #455115;
+$color-lime-1000: #29300d;
+$color-red-50: #fef1f1;
+$color-red-100: #fee1e1;
+$color-red-200: #fec8c8;
+$color-red-300: #fca6a6;
+$color-red-400: #ff7578;
+$color-red-500: #ef4343;
+$color-red-600: #dc2828;
+$color-red-700: #b61b1b;
+$color-red-800: #6d2223;
+$color-red-900: #501617;
+$color-red-1000: #340413;
+$color-orange-50: #fff7ed;
+$color-orange-100: #ffedd5;
+$color-orange-200: #fed7aa;
+$color-orange-300: #fdba74;
+$color-orange-400: #fb923c;
+$color-orange-500: #f97316;
+$color-orange-600: #ea580c;
+$color-orange-700: #c2410c;
+$color-orange-800: #9a3412;
+$color-orange-900: #7c2d12;
+$color-orange-1000: #59200d;
+$color-violet-50: #f6f5ff;
+$color-violet-100: #ebe7fe;
+$color-violet-200: #ded7fe;
+$color-violet-300: #c3b4fd;
+$color-violet-400: #a689fa;
+$color-violet-500: #895af6;
+$color-violet-600: #7c3bed;
+$color-violet-700: #6b26d9;
+$color-violet-800: #5a21b5;
+$color-violet-900: #4d1d95;
+$color-violet-1000: #2c0f57;
+$color-blue-50: #eff6ff;
+$color-blue-100: #dbeafe;
+$color-blue-200: #bfdbfe;
+$color-blue-300: #93c5fd;
+$color-blue-400: #5fa5fa;
+$color-blue-500: #3b82f6;
+$color-blue-600: #2563eb;
+$color-blue-700: #814ed8;
+$color-blue-800: #1e40af;
+$color-blue-900: #1e3a8a;
+$color-blue-1000: #071e5e;
+$color-highlight-primary: #6366f1;
+$color-highlight-secondary: #a5b4fc;
+
+
+
+$border-width-cards: 1px;
+$border-radius-cards: 10px;
+$border-width-buttons: 1px;
+$border-radius-buttons: 30px;
+$border-width-forms: 1px;
+$border-radius-forms: 5px;
+$border-radius-search-form: 30px;
+$shadow-x-cards: 0px;
+$shadow-y-cards: 0px;
+$shadow-blur-cards: 0px;
+$color-shadow-cards: rgba(0,0,0,0);
+$shadow-x-buttons: 0px;
+$shadow-y-buttons: 0px;
+$shadow-blur-buttons: 0px;
+$color-shadow-buttons: rgba(0,0,0,0);
+$grid-gap-original-base: 26px;
+$container-vertical-space-base: 100px;
+$image-fit-padding: 5%;
+
+
+
+
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-size-11: 11px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-21: 21px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-32: 32px;
+$font-size-36: 36px;
+$font-size-40: 40px;
+$font-size-48: 48px;
+$font-size-64: 64px;
+$font-size-72: 72px;
+$font-size-96: 96px;
+$line-height-100: 1;
+$line-height-105: 1.05;
+$line-height-115: 1.15;
+$line-height-125: 1.25;
+$line-height-135: 1.35;
+$line-height-145: 1.45;
+$letter-spacing-0: 0;
+$letter-spacing-1: 0.01em;
+$letter-spacing-2: 0.02em;
+$letter-spacing-n1: -0.01em;
+$letter-spacing-n2: -0.02em;
+$letter-spacing-n3: -0.03em;
+$letter-spacing-n4: -0.04em;
+$font-weight-buttons: 500;   //
+
+
+
+
+$spacing-2xs: 2px;
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+$spacing-3xl: 64px;
+$spacing-4xl: 96px;
+$gutter-desktop: 32px;
+$gutter-mobile: 16px;
+$margin-desktop: 64px;
+$margin-mobile: 16px;
+
+
+
+
+
+$border-radius-2xs: 2px;
+$border-radius-xs: 4px;
+$border-radius-sm: 8px;
+$border-radius-md: 16px;
+$border-radius-lg: 24px;
+$border-radius-xl: 32px;
+$border-radius-2xl: 64px;
+$border-radius-full: 9999px;
+
+
+
+$font-stack-headings: "DM Sans", sans-serif;
+$font-weight-headings: 500;
+$font-style-headings: normal;
+$font-stack-body: "DM Sans", sans-serif;
+$font-weight-body: 400;
+$font-weight-body-bold: 500;
+$font-style-body: normal;
+$font-weight-buttons: $font-weight-body-bold;
+$font-weight-menu: $font-weight-body-bold;
+$base-headings-size: 70;
+$base-headings-line: 1.2;
+$base-body-size: 17;
+$base-body-line: 1.5;
+$base-menu-size: 16;
+
+
+
+$button-padding-large: .9375rem 2.875rem;
+$button-padding-regular: .6875rem 2.25rem;
+$button-padding-small: .5rem 1.625rem;
+
+
+
+$gutter-small: 15px;
+$gutter-regular: 25px;
+$gutter-large: 50px;
+$gutter-xlarge: 80px;
+$gutter-container: 40px;
+$sidebar-width: 420px;
+$sidebar-gutter: 40px;
+$full-height: 100vh;
+$button-padding-large: 0.9375rem 2.875rem;
+$button-padding-regular: 0.6875rem 2.25rem;
+$button-padding-small: 0.5rem 1.625rem;
+$input-padding: 0.75rem;
+$button-product: 3.75rem;
+$header-vertical-space: 30px;
+$container-vertical-space: $container-vertical-space-base;
+$grid-gap: $grid-gap-original-base;
+
+@media screen and (max-width: 1280px) {
+  $gutter-small: 12px;
+  $gutter-regular: 20px;
+  $gutter-large: 35px;
+  $gutter-xlarge: 60px;
+  $container-vertical-space: calc($container-vertical-space-base * .8);
+  $grid-gap: calc($grid-gap-original-base * .8);
+}
+
+@media screen and (max-width: 1023px) {
+  $gutter-small: 9px;
+  $gutter-regular: 15px;
+  $gutter-large: 25px;
+  $gutter-xlarge: 40px;
+  $gutter-container: 30px;
+  $button-padding-large: .75rem 2.5rem;
+  $sidebar-width: 375px;
+  $sidebar-gutter: 20px;
+  $header-vertical-space: 20px;
+  $container-vertical-space: calc($container-vertical-space-base * .6);
+  $grid-gap: calc($grid-gap-original-base * .5);
+}
+
+@media screen and (max-width: 767px) {
+  $button-padding-large: .75rem 2rem;
+  $button-padding-regular: .5rem 1.5rem;
+  $button-padding-small: .375rem .875rem;
+  $input-padding: .5rem;
+  $button-product: 3.125rem;
+  $gutter-container: 20px;
+  $header-vertical-space: 15px;
+}
+
+@media screen and (max-width: 474px) {
+  $sidebar-width: 100%;
+  $sidebar-gutter: 15px;
+  $gutter-container: 15px;
+}

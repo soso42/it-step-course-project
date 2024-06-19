@@ -1,0 +1,26 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18.3333 19.25V17.4167C18.3333 16.4442 17.947 15.5116 17.2593 14.8239C16.5717 14.1363 15.6391 13.75 14.6666 13.75H7.33329C6.36083 13.75 5.4282
+                        14.1363 4.74057 14.8239C4.05293 15.5116 3.66663 16.4442 3.66663 17.4167V19.25"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    </path>
+    <path d="M11 10.0833C13.0251 10.0833 14.6667 8.44171 14.6667 6.41667C14.6667 4.39162 13.0251 2.75 11 2.75C8.975 2.75 7.33337 4.39162 7.33337
+                        6.41667C7.33337 8.44171 8.975 10.0833 11 10.0833Z"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    </path>
+</svg>
+
+<!--<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--<path d="M18.3333 19.25V17.4167C18.3333 16.4442 17.947 15.5116 17.2593 14.8239C16.5717 14.1363 15.6391 13.75 14.6666 13.75H7.33329C6.36083 13.75 5.4282-->
+<!--                        14.1363 4.74057 14.8239C4.05293 15.5116 3.66663 16.4442 3.66663 17.4167V19.25"-->
+<!--      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important">-->
+<!--</path>-->
+<!--<path d="M11 10.0833C13.0251 10.0833 14.6667 8.44171 14.6667 6.41667C14.6667 4.39162 13.0251 2.75 11 2.75C8.975 2.75 7.33337 4.39162 7.33337-->
+<!--                        6.41667C7.33337 8.44171 8.975 10.0833 11 10.0833Z"-->
+<!--      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important">-->
+<!--</path>-->
+<!--</svg>-->
+
+<!--                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">-->
+<!--                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6-->
+<!--                    4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>-->
+<!--                </svg>-->
