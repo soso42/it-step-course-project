@@ -1,0 +1,109 @@
+<app-header></app-header>
+
+<main>
+
+  <section class="product-container">
+
+    <aside class="breadcrumb-container">
+      <nav class="breadcrumb">
+        <span>Home</span>
+        <span>/</span>
+        <span>All products</span>
+        <span>/</span>
+        <span>Paprika</span>
+      </nav>
+    </aside>
+
+    <div class="product">
+
+      <div class="product-gallery">
+
+        <div class="product-image">
+          <img src="assets/img/paprika-large.webp" alt="Product image">
+        </div>
+
+        <div class="product-gallery-thumbnails">
+          <button class="thumbnail element-border-radius active" data-index="0" tabindex="0">
+            <img src="assets/img/paprika1.avif" alt="Paprika">
+          </button>
+          <button class="thumbnail element-border-radius" data-index="0" tabindex="0">
+            <img src="assets/img/paprik2.avif" alt="Paprika">
+          </button>
+          <button class="thumbnail element-border-radius " data-index="0" tabindex="0">
+            <img src="assets/img/paprika3.avif" alt="Paprika">
+          </button>
+        </div>
+      </div>
+
+      <div class="product-text">
+
+        <div class="price-top text-size-xlarge">
+          <span>$2.99</span>
+          <span style="text-decoration: line-through; opacity: 0.4;">$3.50</span>
+        </div>
+
+        <div class="product-title">
+          <h1 class="h2">Paprika</h1>
+        </div>
+
+        <div class="stars-and-reviews">
+                    <span>
+                        <img src="assets/svg/rating-star.svg" alt="Rating star">
+                        <img src="assets/svg/rating-star.svg" alt="Rating star">
+                        <img src="assets/svg/rating-star.svg" alt="Rating star">
+                        <img src="assets/svg/rating-star.svg" alt="Rating star">
+                        <img src="assets/svg/rating-star.svg" alt="Rating star">
+                    </span>
+          <span class="text-size-xsmall text-opacity">No reviews</span>
+        </div>
+
+        <div class="product-subtitle text-size-regular">
+          <span>Milder taste</span>
+        </div>
+
+        <div class="product-description text-size-regular">
+                    <span>It is traditionally made from Capsicum annum varietals in the Longum group, which also
+                        includes chili peppers, but the peppers used for paprika tend to be milder and have
+                        thinner flesh.</span>
+        </div>
+
+
+        <div class="product-actions">
+          <div class="product-price-block">
+            <span class="text-size-heading">$2.99</span>
+            <div >
+              <span class="text-300" style="text-decoration: line-through;">$3.50</span>
+              <span class="text-300 text-opacity">you save $0.51</span>
+            </div>
+          </div>
+          <div class="buttons">
+
+            <div class="quantity-selector">
+              <a class="button" href="#"><span>-</span></a>
+              <input class="text-size-xlarge" type="number" value="1">
+              <a class="button" href="#"><span>+</span></a>
+            </div>
+
+            <div class="add-to-cart-button">
+              <a class="button button-solid button-large button-product " href="#">Add to cart</a>
+            </div>
+
+            <div class="buy-it-now-button">
+              <a class="button button-regular button-large button-product " href="#">Buy it now</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <app-info-cards></app-info-cards>
+
+</main>
+
+<app-footer></app-footer>
