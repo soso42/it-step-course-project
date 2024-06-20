@@ -1,16 +1,25 @@
 <div class="product-card">
-  <a href="">
+  <a href="javascript:void(0)" routerLink="/product/{{product._id}}">
     <img [src]="product.images[0]" alt="Product image">
   </a>
   <div class="card-text">
     <div class="product-price">
-      <span class="text-size-large">$29.00 $35.00</span>
+      <span class="text-size-large">${{ product.price.current }}</span>
+
+      @if (product.price.current != product.price.beforeDiscount) {
+        <span class="text-size-large" style="text-decoration: line-through">${{ product.price.beforeDiscount }}</span>
+      }
+
     </div>
     <div class="product-title">
-      <a class="text-size-xlarge link link-animation" href="#">{{ product.title }}</a>
+      <a class="text-size-xlarge link link-animation" href="javascript:void(0)" routerLink="/product/{{product._id}}">{{ product.title }}</a>
     </div>
   </div>
-  <div class="product-card-badges text-size-xsmall">
-    <span class="product-item-badge">-{{ product.price.discountPercentage }}%</span>
-  </div>
+
+  @if (product.price.discountPercentage > 0) {
+    <div class="product-card-badges text-size-xsmall">
+      <span class="product-item-badge">-{{ product.price.discountPercentage }}%</span>
+    </div>
+  }
+
 </div>

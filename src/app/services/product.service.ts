@@ -13,7 +13,8 @@ export class ProductService {
   constructor() { }
 
   getProducts() {
-    return this.httpClient.get<ProductResponse>('https://api.everrest.educata.dev/shop/products/all')
+    return this.httpClient
+      .get<ProductResponse>('https://api.everrest.educata.dev/shop/products/all?page_index=1&page_size=15');
   }
 
 }
