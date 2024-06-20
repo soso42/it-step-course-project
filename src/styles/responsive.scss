@@ -95,6 +95,17 @@
     }
   }
 
+  body {
+    main {
+      section {
+        div.product-cards-list {
+          grid-template-columns: 1fr 1fr;
+          justify-items: center;
+        }
+      }
+    }
+  }
+
   // Info cards component
   body {
     main {
@@ -319,6 +330,19 @@
 
 
 @media screen and (max-width: 550px) {
+
+
+  body {
+    main {
+      section {
+        div.product-cards-list {
+          grid-template-columns: 1fr;
+          justify-items: center;
+        }
+      }
+    }
+  }
+
 
   // Info cards component
   body {

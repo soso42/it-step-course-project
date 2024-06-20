@@ -15,77 +15,13 @@
   <section class="product-card-container">
     <aside>
       <h2 class="h4">Hot deals</h2>
-      <a class="text-size-large link underlined-link" href="#">View all products</a>
+      <a class="text-size-large link underlined-link" href="javascript:void(0)" routerLink="/shop">View all products</a>
     </aside>
     <div class="product-cards-list">
 
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/wooden-board.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/pan.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/pepper-mill.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/knives.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
+      @for (product of topDiscountedProducts; track product._id) {
+        <app-product-card [product]="product"></app-product-card>
+      }
 
     </div>
   </section>
@@ -93,27 +29,15 @@
 
   <section class="product-card-container">
     <aside>
-      <h2 class="h4">Hot deals</h2>
-      <a class="text-size-large link underlined-link" href="#">View all products</a>
+      <h2 class="h4">Most popular</h2>
+      <a class="text-size-large link underlined-link" href="javascript:void(0)" routerLink="/shop">View all products</a>
     </aside>
     <div class="product-cards-list">
 
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/teapot.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
+      @for (product of highestRatedProducts; track product._id) {
+        <app-product-card [product]="product"></app-product-card>
+      }
+
     </div>
   </section>
 
