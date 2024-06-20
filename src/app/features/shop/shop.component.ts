@@ -4,7 +4,8 @@ import { FooterComponent } from "../../shared/footer/footer.component";
 import { InfoCardsComponent } from "../../shared/info-cards/info-cards.component";
 import { ProductService } from "../../services/product.service";
 import { Product } from '../../interfaces/product';
-import {catchError, tap} from "rxjs";
+import { catchError, tap } from "rxjs";
+import { ProductCardComponent } from "../../shared/product-card/product-card.component";
 
 @Component({
   selector: 'app-shop',
@@ -12,7 +13,8 @@ import {catchError, tap} from "rxjs";
   imports: [
     HeaderComponent,
     FooterComponent,
-    InfoCardsComponent
+    InfoCardsComponent,
+    ProductCardComponent
   ],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss'

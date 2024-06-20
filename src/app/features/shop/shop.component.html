@@ -35,92 +35,12 @@
 
     <div class="product-cards-list">
 
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/wooden-board.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/pan.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/pepper-mill.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/knives.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <a href="">
-          <img src="assets/img/teapot.webp" alt="Product image">
-        </a>
-        <div class="card-text">
-          <div class="product-price">
-            <span class="text-size-large">$29.00 $35.00</span>
-          </div>
-          <div class="product-title">
-            <a class="text-size-xlarge link link-animation" href="#">Cutting board</a>
-          </div>
-        </div>
-        <div class="product-card-badges text-size-xsmall">
-          <span class="product-item-badge">-17%</span>
-        </div>
-      </div>
+      @for (product of products; track product._id) {
+        <app-product-card [product]="product"></app-product-card>
+      }
 
     </div>
+
   </section>
 
   <app-info-cards></app-info-cards>

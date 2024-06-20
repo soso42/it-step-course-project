@@ -1,0 +1,16 @@
+<div class="product-card">
+  <a href="">
+    <img [src]="product.images[0]" alt="Product image">
+  </a>
+  <div class="card-text">
+    <div class="product-price">
+      <span class="text-size-large">$29.00 $35.00</span>
+    </div>
+    <div class="product-title">
+      <a class="text-size-xlarge link link-animation" href="#">{{ product.title }}</a>
+    </div>
+  </div>
+  <div class="product-card-badges text-size-xsmall">
+    <span class="product-item-badge">-{{ product.price.discountPercentage }}%</span>
+  </div>
+</div>
