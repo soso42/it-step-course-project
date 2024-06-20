@@ -1,0 +1,127 @@
+<app-header></app-header>
+
+<main>
+
+  <section class="cart-container">
+
+    <aside class="breadcrumb-container">
+      <nav class="breadcrumb">
+        <span>Home</span>
+        <span>/</span>
+        <span>Cart</span>
+      </nav>
+    </aside>
+
+    <div class="section-heading">
+      <h1 class="h2">Shopping Cart</h1>
+    </div>
+
+    <div class="cart text-size-regular" id="cart">
+
+      <form>
+        <div class="cart-block text-size-regular">
+          <div class="cart-block-head">
+            <span class="product">Product</span>
+            <span></span>
+            <span>Quantity</span>
+            <span class="text-align-right">Total</span>
+          </div>
+
+
+          <div class="cart-form-item-layout">
+
+            <a class="img-link" href="#">
+              <img src="assets/img/sandwich-bun.avif" alt="Sandwich bum">
+            </a>
+
+            <div class="product-title-price">
+              <div class="total-price">
+                <span>Total: $0.80</span>
+              </div>
+              <div class="single-item-price">
+                <span>$0.80</span>
+              </div>
+              <div>
+                <a class="link link-animation" href="#">Sandwich Bun</a>
+              </div>
+            </div>
+
+            <div class="cart-item-actions">
+              <div class="quantity-selector">
+                <a class="button text-size-xlarge" href="#"><span>-</span></a>
+                <input class="text-size-regular" type="number" placeholder="1">
+                <a class="button text-size-xlarge" href="#"><span>+</span></a>
+              </div>
+              <div class="remove">
+                <a class="link underlined-link text-size-xsmall" href="#">Remove</a>
+              </div>
+            </div>
+
+            <div class="price-total text-align-right">$0.80</div>
+
+          </div>
+
+
+          <div class="cart-form-item-layout">
+
+            <a class="img-link" href="#">
+              <img src="assets/img/pomegranade.avif" alt="pomegranate">
+            </a>
+
+            <div class="product-title-price">
+              <div class="total-price">
+                <span>Total: $0.80</span>
+              </div>
+              <div class="single-item-price">
+                <span>$0.80</span>
+              </div>
+              <div>
+                <a class="link link-animation" href="#">pomegranate</a>
+              </div>
+            </div>
+
+            <div class="cart-item-actions">
+              <div class="quantity-selector">
+                <a class="button text-size-xlarge" href="#"><span>-</span></a>
+                <input class="text-size-regular" type="number" placeholder="1">
+                <a class="button text-size-xlarge" href="#"><span>+</span></a>
+              </div>
+              <div class="remove">
+                <a class="link underlined-link text-size-xsmall" href="#">Remove</a>
+              </div>
+            </div>
+
+            <div class="price-total text-align-right">$0.80</div>
+
+          </div>
+
+        </div>
+      </form>
+
+      <div class="total">
+        <div class="alert alert--note alert--wide">You are $49.20 away from free shipping.</div>
+        <div class="details">
+          <div class="cart-total">
+            <span>Total</span>
+            <span class="h2">$0.80</span>
+          </div>
+          <div class="cart-instructions">
+            <label for="cart-instructions">Order instructions</label>
+            <textarea name="cart-instructions" id="cart-instructions" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <span class="text-size-small text-opacity tax-info">Tax included and shipping calculated at checkout</span>
+          </div>
+          <div>
+            <a class="button button-regular button-solid checkout-button">Check Out</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<app-footer></app-footer>

@@ -5,13 +5,16 @@ import { ErrorComponent } from "./features/error/error.component";
 import { AboutUsComponent } from "./features/about-us/about-us.component";
 import { ShopComponent } from "./features/shop/shop.component";
 import { ProductPageComponent } from "./features/product-page/product-page.component";
+import { CartComponent } from "./features/cart/cart.component";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, title: 'Local Shop' },
 
-  { path: 'product/:id', component: ProductPageComponent },
-
   { path: 'shop', component: ShopComponent, title: 'Shop all products' },
+  { path: 'product/:id', component: ProductPageComponent},
+
+  { path: 'cart', component: CartComponent, title: 'Shopping cart' },
+
   { path: 'about', component: AboutUsComponent, title: 'About us' },
   { path: 'contact', component: ContactComponent, title: 'Contact us' },
 
