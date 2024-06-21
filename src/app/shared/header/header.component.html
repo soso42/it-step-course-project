@@ -1,4 +1,7 @@
 <header>
+
+  <div class="dimmer" #dimmer (click)="onClickDimmer()"></div>
+
   <section class="announcement-bar">
     <div class="announcement-wrapper">
       <div class="social-icons">
@@ -14,25 +17,31 @@
   </section>
 
   <section class="header-top" id="header-top">
-    <div class="header-top-wrapper">
+    <div class="header-top-wrapper" style="z-index: 103">
       <div class="logo">
         <a class="logo-img" title="Website name" routerLink="/">
           <img src="assets/img/LOGO.webp" alt="Logo">
         </a>
       </div>
 
-      <div class="header-actions">
+      <div class="header-actions" >
 
-        <a class="button button-icon search-input-main" href="#">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="10.5" cy="10.5" r="7.5" stroke="currentColor" stroke-width="2" style="fill:none!important"></circle>
+        <a class="button button-icon search-input-main"
+           #searchArea
+           href="javascript:void(0)"
+           (focusin)="onSearchFocus()">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" (click)="onClickSearchIcon()">
+            <circle cx="10.5" cy="10.5" r="7.5" stroke="black" stroke-width="2" style="fill:none!important"></circle>
             <path d="M17.1213 15.2929L16.4142 14.5858L15 16L15.7071 16.7071L17.1213 15.2929ZM19.2426 20.2426C19.6331
                                             20.6332 20.2663 20.6332 20.6568 20.2426C21.0473 19.8521 21.0473 19.219 20.6568 18.8284L19.2426
                                             20.2426ZM15.7071 16.7071L19.2426 20.2426L20.6568 18.8284L17.1213 15.2929L15.7071 16.7071Z"
-                  fill="black" style="stroke:none!important">
+                  fill="black" >
             </path>
           </svg>
-          <input class="search-input" type="search" placeholder="Search for...">
+          <input class="search-input"
+                 type="search"
+                 placeholder="Search for..."
+                 #searchInput>
         </a>
 
         <a class="button button-icon" href="#">

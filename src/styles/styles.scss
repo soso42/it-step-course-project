@@ -325,9 +325,10 @@ h3, .h3 {
 // Search Form
 .search-input-main {
   border: 1px solid $color-grey-300;
+  z-index: 102;
   &:hover {
-    background-color: unset !important;
-    color: unset !important;
+    background-color: white;
+    //color: unset !important;
     border: 1px solid $color-base-black;
   }
   input.search-input {
@@ -1422,4 +1423,28 @@ input[type=number] {
   display: inline-block;
   text-align: left;
   //background-image: url(../svg/rating-star.svg);
+}
+
+// main page dimmer
+.dimmer {
+  display: none;
+  background: #000;
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.search-area-while-dimmer {
+  border: 1px solid $color-base-black;
+  background-color: white;
+  //&:hover {
+  //  background-color: white;
+  //}
+  //&:focus {
+  //  background-color: white;
+  //}
 }

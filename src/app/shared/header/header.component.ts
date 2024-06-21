@@ -15,6 +15,9 @@ export class HeaderComponent {
   renderer = inject(Renderer2);
 
   @ViewChild('overlayMenu') overlayMenu!: ElementRef;
+  @ViewChild('dimmer') dimmer!: ElementRef;
+  @ViewChild('searchArea') searchArea!: ElementRef;
+  @ViewChild('searchInput') searchInput!: ElementRef;
 
 
   toggleMenu() {
@@ -23,6 +26,24 @@ export class HeaderComponent {
     } else {
       this.renderer.setStyle(this.overlayMenu.nativeElement, 'display', 'none');
     }
+  }
+
+  hideDimmer() {
+    this.renderer.setStyle(this.dimmer.nativeElement, 'display', 'none');
+  }
+
+  onClickDimmer() {
+    this.hideDimmer();
+  }
+
+  onSearchFocus() {
+    this.renderer.setStyle(this.dimmer.nativeElement, 'display', 'block');
+    this.renderer.addClass(this.searchArea.nativeElement, 'search-area-while-dimmer');
+  }
+
+  onClickSearchIcon() {
+    this.hideDimmer();
+    console.log(this.searchInput.nativeElement.value);
   }
 
 }
