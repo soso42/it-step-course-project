@@ -1,0 +1,18 @@
+
+.invalid-input {
+  border: 2px solid red;
+}
+
+.invalid-input::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+//.invalid-input {
+//  border: 2px solid red;
+//}
+//
+//.invalid-input::placeholder {
+//  color: red;
+//  opacity: 1; /* Firefox */
+//}

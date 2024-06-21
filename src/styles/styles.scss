@@ -51,6 +51,16 @@ p {
   color: $color-base-white;
 }
 
+.button-disabled {
+  background-color: $color-grey-500;
+  cursor: default;
+}
+
+.button-disabled:hover {
+  background-color: $color-grey-500;
+  cursor: default;
+}
+
 .button-regular {
   padding: $button-padding-regular;
   font-size: calc(18px / 16 * $base-body-size + 0px);
@@ -288,9 +298,17 @@ h3, .h3 {
   border: 1px solid $color-grey-300;
 }
 
+.grey-border-bold {
+  border: 1px solid $color-grey-500;
+}
+
 .element--border-radius {
   border-radius: $border-radius-cards;
   overflow: hidden;
+}
+
+.red-border {
+  border: 2px solid red;
 }
 
 
@@ -1133,14 +1151,12 @@ main {
             padding-bottom: $gutter-small;
             input {
               width: 100%;
-              border: 1px solid $color-grey-500;
               border-radius: 5px;
               padding: 12px;
               box-sizing: border-box;
             }
             textarea {
               width: 100%;
-              border: 1px solid $color-grey-500;
               border-radius: 5px;
               padding: 12px;
               box-sizing: border-box;

@@ -21,29 +21,69 @@
 
       <div class="contact-form-the-form">
         <h3 class="h4">Drop us a line</h3>
-        <form>
+        <form #contactForm="ngForm">
           <div>
             <label></label>
-            <input class="field-input text-size-regular text-300" autocomplete="off" type="text" value="" placeholder="Name">
+            <input class="field-input text-size-regular text-300 grey-border-bold"
+                   type="text"
+                   placeholder="Name *"
+                   name="name"
+                   ngModel
+                   #name='ngModel'
+                   required
+                   pattern="[a-zA-Z]+"
+                   [ngClass]="{ 'red-border' : !name.valid && name.touched }"  >
           </div>
           <div>
             <label></label>
-            <input class="field-input text-size-regular" autocomplete="off" type="email" value="" placeholder="Email">
+            <input class="field-input text-size-regular grey-border-bold"
+                   type="email"
+                   placeholder="Email *"
+                   name="email"
+                   ngModel
+                   #email='ngModel'
+                   required
+                   pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                   [ngClass]="{ 'red-border' : !email.valid && email.touched }">
           </div>
           <div>
             <label></label>
-            <input class="field-input text-size-regular" autocomplete="off" type="text" value="" placeholder="Subjet">
+            <input class="field-input text-size-regular grey-border-bold"
+                   type="text"
+                   placeholder="Subjet"
+                   name="subject"
+                   ngModel
+                   #subject="ngModel">
           </div>
           <div>
             <label></label>
-            <input class="field-input text-size-regular" autocomplete="off" type="text" value="" placeholder="Phone number">
+            <input class="field-input text-size-regular grey-border-bold"
+                   type="text"
+                   placeholder="Phone number"
+                   name="phone"
+                   ngModel
+                   #phone="ngModel">
           </div>
           <div>
             <label></label>
-            <textarea class="field-input text-size-regular" rows="7" type="text" value="" placeholder="Message"></textarea>
+            <textarea class="field-input text-size-regular grey-border-bold"
+                      rows="7"
+                      type="text"
+                      placeholder="Message *"
+                      name="text"
+                      ngModel
+                      #text="ngModel"
+                      required
+                      [ngClass]="{ 'red-border' : !text.valid && text.touched }">
+            </textarea>
           </div>
           <div>
-            <a class="button button-solid button-regular" href="#">Submit</a>
+            <button class="button button-solid button-regular grey-border-bold"
+                    (click)="onClickSubmit(contactForm)"
+                    [ngClass]="{ 'button-disabled' : !contactForm.valid }"
+                    [disabled]="!contactForm.valid">
+              Submit
+            </button>
           </div>
         </form>
       </div>
