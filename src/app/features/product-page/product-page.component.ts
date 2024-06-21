@@ -1,4 +1,4 @@
-import {Component, ElementRef, inject, OnInit, Renderer2, ViewChild} from '@angular/core';
+import { Component, ElementRef, inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { HeaderComponent } from "../../shared/header/header.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
 import { InfoCardsComponent } from "../../shared/info-cards/info-cards.component";

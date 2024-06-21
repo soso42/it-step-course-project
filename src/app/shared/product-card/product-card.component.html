@@ -12,7 +12,7 @@
 
     </div>
     <div class="product-title">
-      <a class="text-size-xlarge link link-animation" href="javascript:void(0)" routerLink="/product/{{product._id}}">{{ product.title }}</a>
+      <a class="text-size-xlarge link link-animation" href="javascript:void(0)" routerLink="/product/{{product._id}}">{{ product.title | titleShortener }}</a>
     </div>
   </div>
 

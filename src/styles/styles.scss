@@ -71,6 +71,10 @@ p {
 .button-product {
 }
 
+.button-white-background {
+  background-color: $color-base-white;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -333,9 +337,9 @@ div.product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   min-width: 220px;
   max-width: 300px;
+  height: 100%;
   border: 1px solid $color-grey-300;
   border-radius: 10px;
   overflow: hidden;
@@ -1333,11 +1337,8 @@ main {
             border-top: 1px solid $color-grey-300;
             padding-top: 20px;
             box-sizing: border-box;
-            //display: grid;
-            //grid-template-columns: 1fr 1fr 1fr;
             display: flex;
             justify-content: space-between;
-            //gap: 15px;
             align-items: center;
             div {
               margin: 0;
@@ -1365,6 +1366,11 @@ main {
                 &:focus {
                   outline: none;
                 }
+              }
+            }
+            div.buy-it-now-button {
+              button {
+                //color: transparent;
               }
             }
           }
