@@ -78,8 +78,8 @@
                             </path>
                         </svg>
                     </span>
-          <span>$0.00</span>
-          <span>(0)</span>
+          <span>${{ this.cartService.getCartTotal() }}</span>
+          <span>( {{ this.cartService.cart.length }} )</span>
         </a>
 
       </div>

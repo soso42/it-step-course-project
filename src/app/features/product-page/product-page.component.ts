@@ -8,6 +8,8 @@ import { Product } from "../../interfaces/product";
 import { catchError, tap } from "rxjs";
 import { FormsModule } from "@angular/forms";
 import { CartService } from "../../services/cart.service";
+import { SweetAlert2Module } from "@sweetalert2/ngx-sweetalert2";
+import Swal from "sweetalert2";
 
 @Component({
   selector: 'app-product-page',
@@ -16,7 +18,8 @@ import { CartService } from "../../services/cart.service";
     HeaderComponent,
     FooterComponent,
     InfoCardsComponent,
-    FormsModule
+    FormsModule,
+    SweetAlert2Module
   ],
   templateUrl: './product-page.component.html',
   styleUrl: './product-page.component.scss'
@@ -63,6 +66,15 @@ export class ProductPageComponent implements OnInit {
     if (this.product.stock > this.productQuantityToBuy) {
       this.productQuantityToBuy++;
     }
+  }
+
+  onClickAddToCart() {
+    this.cartService.addProductToCart(this.product, this.productQuantityToBuy);
+    Swal.fire({
+      title: "Success!",
+      text: "Product was added to cart!",
+      icon: "success"
+    });
   }
 
 }

@@ -27,83 +27,18 @@
             <span class="text-align-right">Total</span>
           </div>
 
-
-          <div class="cart-form-item-layout">
-
-            <a class="img-link" href="#">
-              <img src="assets/img/sandwich-bun.avif" alt="Sandwich bum">
-            </a>
-
-            <div class="product-title-price">
-              <div class="total-price">
-                <span>Total: $0.80</span>
-              </div>
-              <div class="single-item-price">
-                <span>$0.80</span>
-              </div>
-              <div>
-                <a class="link link-animation" href="#">Sandwich Bun</a>
-              </div>
-            </div>
-
-            <div class="cart-item-actions">
-              <div class="quantity-selector">
-                <a class="button text-size-xlarge" href="#"><span>-</span></a>
-                <input class="text-size-regular" type="number" placeholder="1">
-                <a class="button text-size-xlarge" href="#"><span>+</span></a>
-              </div>
-              <div class="remove">
-                <a class="link underlined-link text-size-xsmall" href="#">Remove</a>
-              </div>
-            </div>
-
-            <div class="price-total text-align-right">$0.80</div>
-
-          </div>
-
-
-          <div class="cart-form-item-layout">
-
-            <a class="img-link" href="#">
-              <img src="assets/img/pomegranade.avif" alt="pomegranate">
-            </a>
-
-            <div class="product-title-price">
-              <div class="total-price">
-                <span>Total: $0.80</span>
-              </div>
-              <div class="single-item-price">
-                <span>$0.80</span>
-              </div>
-              <div>
-                <a class="link link-animation" href="#">pomegranate</a>
-              </div>
-            </div>
-
-            <div class="cart-item-actions">
-              <div class="quantity-selector">
-                <a class="button text-size-xlarge" href="#"><span>-</span></a>
-                <input class="text-size-regular" type="number" placeholder="1">
-                <a class="button text-size-xlarge" href="#"><span>+</span></a>
-              </div>
-              <div class="remove">
-                <a class="link underlined-link text-size-xsmall" href="#">Remove</a>
-              </div>
-            </div>
-
-            <div class="price-total text-align-right">$0.80</div>
-
-          </div>
+          @for (item of cart; track item.product._id) {
+            <app-product-card-cart [item]="item"></app-product-card-cart>
+          }
 
         </div>
       </form>
 
       <div class="total">
-        <div class="alert alert--note alert--wide">You are $49.20 away from free shipping.</div>
         <div class="details">
           <div class="cart-total">
             <span>Total</span>
-            <span class="h2">$0.80</span>
+            <span class="h2">${{ this.cartService.getCartTotal() }}</span>
           </div>
           <div class="cart-instructions">
             <label for="cart-instructions">Order instructions</label>

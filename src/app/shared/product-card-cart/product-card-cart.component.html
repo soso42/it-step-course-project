@@ -1,0 +1,32 @@
+<div class="cart-form-item-layout">
+
+  <a class="img-link" href="javascript:void(0)">
+    <img [src]="item.product.thumbnail" alt="Sandwich bum">
+  </a>
+
+  <div class="product-title-price">
+    <div class="total-price">
+      <span>Total: ${{ item.product.price.current * item.quantity }}</span>
+    </div>
+    <div class="single-item-price">
+      <span>${{ item.product.price.current }}</span>
+    </div>
+    <div>
+      <a class="link link-animation" href="javascript:void(0)">{{ item.product.title }}</a>
+    </div>
+  </div>
+
+  <div class="cart-item-actions">
+    <div class="quantity-selector">
+      <a class="button text-size-xlarge" href="javascript:void(0)" (click)="onClickDecrement()"><span>-</span></a>
+      <input class="text-size-regular" type="number" [value]="item.quantity">
+      <a class="button text-size-xlarge" href="javascript:void(0)" (click)="onClickIncrement()"><span>+</span></a>
+    </div>
+    <div class="remove">
+      <a class="link underlined-link text-size-xsmall" href="javascript:void(0)" (click)="onClickRemove(item.product._id)">Remove</a>
+    </div>
+  </div>
+
+  <div class="price-total text-align-right">${{ item.product.price.current * item.quantity }}</div>
+
+</div>

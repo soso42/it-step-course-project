@@ -1,5 +1,6 @@
 import { Component, ElementRef, inject, Renderer2, ViewChild } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { CartService } from "../../services/cart.service";
 
 @Component({
   selector: 'app-header',
@@ -13,6 +14,7 @@ import { RouterLink } from "@angular/router";
 export class HeaderComponent {
 
   renderer = inject(Renderer2);
+  cartService = inject(CartService);
 
   @ViewChild('overlayMenu') overlayMenu!: ElementRef;
   @ViewChild('dimmer') dimmer!: ElementRef;
